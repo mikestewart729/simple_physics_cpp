@@ -19,8 +19,12 @@ int main()
     // Convert the angle to radians and calculate the range
     double range {getRange(v_0, convertToRadians(theta))};
 
+    // Round result to 2 decimal places
+    int multiplier {100};
+    range = std::round(range * multiplier) / multiplier;
+
     // Display the range to the user
     std::cout << "The range of your launched particle is " << range << " meters.\n";
-    
+
     return 0;
 }

@@ -24,5 +24,5 @@ double convertToRadians(double degree)
 double getRange(double v_0, double theta)
 {
     // calculate the range of the launched particle
-    return (v_0 * v_0 * std::sin(theta)) / gravity;
+    return (v_0 * v_0 * std::sin(2 * theta)) / gravity;
 }
